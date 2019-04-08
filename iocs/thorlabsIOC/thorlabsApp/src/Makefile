@@ -5,6 +5,9 @@ include $(TOP)/configure/CONFIG
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 #=============================
 
+# The following are used for debugging messages.
+#!USR_CXXFLAGS += -DDEBUG
+
 #=============================
 # Build the IOC application
 
@@ -16,10 +19,21 @@ DBD += thorlabs.dbd
 thorlabs_DBD += base.dbd
 
 # Include dbd files from all support applications:
-#thorlabs_DBD += xxx.dbd
+#ifdef ASYN
+thorlabs_DBD += asyn.dbd
+#endif
+thorlabs_DBD += motorSupport.dbd
+thorlabs_DBD += devThorLabs.dbd
 
 # Add all the support libraries needed by this IOC
-#thorlabs_LIBS += xxx
+thorlabs_LIBS += thorlabs
+thorlabs_LIBS += motor
+#ifdef ASYN
+thorlabs_LIBS += asyn
+#endif
+#ifdef SNCSEQ
+thorlabs_LIBS += seq pv
+#endif
 
 # thorlabs_registerRecordDeviceDriver.cpp derives from thorlabs.dbd
 thorlabs_SRCS += thorlabs_registerRecordDeviceDriver.cpp
