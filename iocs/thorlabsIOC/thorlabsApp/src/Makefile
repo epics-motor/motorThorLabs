@@ -21,12 +21,13 @@ thorlabs_DBD += base.dbd
 # Include dbd files from all support applications:
 #ifdef ASYN
 thorlabs_DBD += asyn.dbd
+thorlabs_DBD += drvAsynSerialPort.dbd
 #endif
 thorlabs_DBD += motorSupport.dbd
 thorlabs_DBD += devThorLabs.dbd
 
 # Add all the support libraries needed by this IOC
-thorlabs_LIBS += thorlabs
+thorlabs_LIBS += ThorLabs
 thorlabs_LIBS += motor
 #ifdef ASYN
 thorlabs_LIBS += asyn
