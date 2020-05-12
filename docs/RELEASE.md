@@ -1,5 +1,20 @@
 # motorThorLabs Releases
 
+## __R1-0-1 (2020-05-12)__
+R1-0-1 is a release based on the master branch.  
+
+### Changes since R1-0
+
+#### New features
+* None
+
+#### Modifications to existing features
+* None
+
+#### Bug fixes
+* Commit [8a1b9cb](https://github.com/epics-motor/motorThorLabs/commit/9ec46c1b328227e3405730bb20f869c8a639cc8e): Include ``$(MOTOR)/modules/RELEASE.$(EPICS_HOST_ARCH).local`` instead of ``$(MOTOR)/configure/RELEASE``
+* Pull request [#1](https://github.com/epics-motor/motorThorLabs/pull/1): Eliminated compiler warnings
+
 ## __R1-0 (2019-04-18)__
 R1-0 is a release based on the master branch.  
 
