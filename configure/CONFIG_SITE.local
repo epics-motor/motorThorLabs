@@ -1,0 +1,9 @@
+# Controls whether to build in the ThorLabs Kinesis support.
+
+WITH_KINESIS = NO
+
+# If building in Kinesis support, change this to the location of the Kinesis DLLs
+# This is usually in C:/Program Files/Thorlabs/Kinesis, but we need to use the
+# short path because spaces cause issues with EPICS builds.
+
+THORLABS_DIR = C:/Progra~1/Thorlabs/Kinesis
