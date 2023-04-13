@@ -1,5 +1,23 @@
 # motorThorLabs Releases
 
+## __R1-0-2 (2023-04-13)__
+R1-0-2 is a release based on the master branch.
+
+### Changes since R1-0-1
+
+#### New features
+* Pull request [#4](https://github.com/epics-motor/motorThorLabs/pull/4): [Keenan Lang](https://github.com/keenanlang) added Kinesis support (KDC101 and KST101)
+
+#### Modifications to existing features
+* None
+
+#### Bug fixes
+* None
+
+#### Continuous integration
+* Added ci-scripts (v3.0.1)
+* Configured to use Github Actions for CI
+
 ## __R1-0-1 (2020-05-12)__
 R1-0-1 is a release based on the master branch.  
 

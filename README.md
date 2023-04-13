@@ -1,5 +1,5 @@
 # motorThorLabs
-EPICS motor drivers for the following [Thorlabs](https://www.thorlabs.com/) controllers: Piezo Controller, Model MDT695
+EPICS motor drivers for the following [Thorlabs](https://www.thorlabs.com/) controllers: Piezo Controller Model MDT695, Kinesis KDC101 and KST101 (Windows).
 
 [![Build Status](https://github.com/epics-motor/motorThorLabs/actions/workflows/ci-scripts-build.yml/badge.svg)](https://github.com/epics-motor/motorThorLabs/actions/workflows/ci-scripts-build.yml)
 <!--[![Build Status](https://travis-ci.org/epics-motor/motorThorLabs.png)](https://travis-ci.org/epics-motor/motorThorLabs)-->
