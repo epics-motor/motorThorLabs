@@ -1,0 +1,8 @@
+file "$(MOTOR)/db/basic_asyn_motor.db"
+{
+pattern
+{P,	        N,	 M,	DTYP,		PORT,	      ADDR,	C,	S,	DESC,	EGU,	DIR,	VELO,	VBAS,	ACCL,	BDST,	BVEL,	BACC,	MRES,	PREC,	DHLM,	DLLM,	INIT}
+{thorlabs:,	2,	"m$(N)", "asynMotor",	"KST-01", 	0,	0,	0,	"motor $(N)", units,	Pos,	100,	25,	1,	0,	0,	50,	1,	0,	0,	0,	""}
+{thorlabs:,	3,	"m$(N)", "asynMotor",	"KDC-01", 	0,	0,	0,	"motor $(N)", units,	Pos,	100,	25,	1,	0,	0,	50,	1,	0,	0,	0,	""}
+}
+
