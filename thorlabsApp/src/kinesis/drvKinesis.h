@@ -21,7 +21,7 @@ class epicsShareClass KinesisAxis : public asynMotorAxis
 		asynStatus home(double min_velocity, double max_velocity, double acceleration, int forwards);
 		asynStatus stop(double acceleration);
 		asynStatus poll(bool* moving);
-		
+                
 		virtual void connect() = 0;
 		virtual void disconnect() = 0;
 		
@@ -34,6 +34,8 @@ class epicsShareClass KinesisAxis : public asynMotorAxis
 		virtual int getPosition() = 0;
 		virtual int getStatus() = 0;
 		
+		virtual int setVelParams(double acceleration, double maxVelocity) = 0;
+
 		virtual void moveRelative(double position) = 0;
 		virtual void moveToPosition(double position) = 0;
 		
@@ -67,6 +69,8 @@ class epicsShareClass KinesisDCMotorAxis : public KinesisAxis
 		
 		int getPosition();
 		int getStatus();
+
+		int setVelParams(double acceleration, double maxVelocity);
 		
 		void moveRelative(double position);
 		void moveToPosition(double position);
@@ -94,7 +98,9 @@ class epicsShareClass KinesisStepMotorAxis : public KinesisAxis
 		
 		int getPosition();
 		int getStatus();
-		
+
+		int setVelParams(double acceleration, double maxVelocity);
+                
 		void moveRelative(double position);
 		void moveToPosition(double position);
 		
