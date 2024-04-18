@@ -48,7 +48,7 @@ void KinesisDCMotorAxis::disableChannel()   { CC_DisableChannel(this->serial); }
 int KinesisDCMotorAxis::getPosition()    { return CC_GetPosition(this->serial); }
 int KinesisDCMotorAxis::getStatus()      { return CC_GetStatusBits(this->serial); }
 
-int KinesisDCMotorAxis::setVelParams(double acceleration, double maxVelocity) { CC_SetVelParams(this->serial, acceleration, maxVelocity); }
+void KinesisDCMotorAxis::setVelParams(double acceleration, double maxVelocity) { CC_SetVelParams(this->serial, acceleration, maxVelocity); }
 
 void KinesisDCMotorAxis::moveRelative(double position)      { CC_MoveRelative(this->serial, position); }
 void KinesisDCMotorAxis::moveToPosition(double position)    { CC_MoveToPosition(this->serial, position); }

@@ -34,7 +34,7 @@ class epicsShareClass KinesisAxis : public asynMotorAxis
 		virtual int getPosition() = 0;
 		virtual int getStatus() = 0;
 		
-		virtual int setVelParams(double acceleration, double maxVelocity) = 0;
+		virtual void setVelParams(double acceleration, double maxVelocity) = 0;
 
 		virtual void moveRelative(double position) = 0;
 		virtual void moveToPosition(double position) = 0;
@@ -70,7 +70,7 @@ class epicsShareClass KinesisDCMotorAxis : public KinesisAxis
 		int getPosition();
 		int getStatus();
 
-		int setVelParams(double acceleration, double maxVelocity);
+		void setVelParams(double acceleration, double maxVelocity);
 		
 		void moveRelative(double position);
 		void moveToPosition(double position);
@@ -99,7 +99,7 @@ class epicsShareClass KinesisStepMotorAxis : public KinesisAxis
 		int getPosition();
 		int getStatus();
 
-		int setVelParams(double acceleration, double maxVelocity);
+		void setVelParams(double acceleration, double maxVelocity);
                 
 		void moveRelative(double position);
 		void moveToPosition(double position);

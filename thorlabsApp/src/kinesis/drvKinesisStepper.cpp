@@ -49,7 +49,7 @@ void KinesisStepMotorAxis::disableChannel()   { SCC_DisableChannel(this->serial)
 int KinesisStepMotorAxis::getPosition()    { return SCC_GetPosition(this->serial); }
 int KinesisStepMotorAxis::getStatus()      { return SCC_GetStatusBits(this->serial); }
 
-int KinesisStepMotorAxis::setVelParams(double acceleration, double maxVelocity) { SCC_SetVelParams(this->serial, acceleration, maxVelocity); }
+void KinesisStepMotorAxis::setVelParams(double acceleration, double maxVelocity) { SCC_SetVelParams(this->serial, acceleration, maxVelocity); }
 
 void KinesisStepMotorAxis::moveRelative(double position)      { SCC_MoveRelative(this->serial, position); }
 void KinesisStepMotorAxis::moveToPosition(double position)    { SCC_MoveToPosition(this->serial, position); }
