@@ -44,7 +44,9 @@ KinesisAxis::KinesisAxis(KinesisController* pc, int axisNo, int serial_no)
 }
 
 asynStatus KinesisAxis::move(double position, int relative, double minVelocity, double maxVelocity, double acceleration)
-{	
+{
+	this->setVelParams(acceleration, maxVelocity);
+    
 	if (relative)    { this->moveRelative(position); }
 	else             { this->moveToPosition(position); }
 	
