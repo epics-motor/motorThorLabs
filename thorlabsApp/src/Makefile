@@ -20,6 +20,8 @@ ifeq ($(WITH_KINESIS),YES)
     
     USR_INCLUDES = -I$(THORLABS_DIR)
     
+    USR_LDFLAGS = -L$(THORLABS_DIR)
+    
     DBD += devThorLabsKinesis.dbd
     
     SRCS += drvKinesis.cpp
@@ -27,10 +29,10 @@ ifeq ($(WITH_KINESIS),YES)
     SRCS += drvKinesisDC.cpp
     
     Thorlabs.MotionControl.KCube.DCServo_DIR += $(THORLABS_DIR)
-    ThorLabs_DLL_LIBS += Thorlabs.MotionControl.KCube.DCServo
+    ThorLabs_SYS_LIBS += Thorlabs.MotionControl.KCube.DCServo
 
     Thorlabs.MotionControl.KCube.StepperMotor_DIR += $(THORLABS_DIR)
-    ThorLabs_DLL_LIBS += Thorlabs.MotionControl.KCube.StepperMotor
+    ThorLabs_SYS_LIBS += Thorlabs.MotionControl.KCube.StepperMotor
 endif
 
 
@@ -38,4 +40,3 @@ ThorLabs_LIBS += motor asyn
 ThorLabs_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 include $(TOP)/configure/RULES
-
