@@ -1,5 +1,23 @@
 # motorThorLabs Releases
 
+## __R1-0-3 (2026-01-29)__
+R1-0-3 is a release based on the master branch.
+
+### Changes since R1-0-2
+
+#### New features
+* Commit [2c76b20](https://github.com/epics-motor/motorThorLabs/commit/2c76b20d50dc41a7703f8923f02e644610e6f6e2): [Keenan Lang](https://github.com/keenanlang) added KCube configuration examples
+
+#### Modifications to existing features
+* None
+
+#### Bug fixes
+* Pull request [#8](https://github.com/epics-motor/motorThorLabs/pull/8): [Keenan Lang](https://github.com/keenanlang) updated the Kinesis support so velocity and acceleration are sent to the controller
+* Pull request [#12](https://github.com/epics-motor/motorThorLabs/pull/12): Applied fix from [ps3017](https://github.com/ps3017) in [#6](https://github.com/epics-motor/motorThorLabs/issues/6) for compile errors when building outside of motor for windows-x64-mingw
+
+#### Continuous integration
+* Added ci-scripts (v3.4.1)
+
 ## __R1-0-2 (2023-04-13)__
 R1-0-2 is a release based on the master branch.
 
