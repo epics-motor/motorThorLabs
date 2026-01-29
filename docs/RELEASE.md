@@ -16,7 +16,7 @@ R1-0-3 is a release based on the master branch.
 * Pull request [#12](https://github.com/epics-motor/motorThorLabs/pull/12): Applied fix from [ps3017](https://github.com/ps3017) in [#6](https://github.com/epics-motor/motorThorLabs/issues/6) for compile errors when building outside of motor for windows-x64-mingw
 
 #### Continuous integration
-* Added ci-scripts (v3.4.1)
+* Upgraded ci-scripts (v3.4.1)
 
 ## __R1-0-2 (2023-04-13)__
 R1-0-2 is a release based on the master branch.
